@@ -9,7 +9,7 @@ Sends easily configurable, SCSS powered, localised, HTML multipart emails from S
 * Fully localised
 * Sends HTML/plain text multi part emails so all clients are supported
 * Includes support for `spree_auth_devise`
-* Uses [premailer-rails](https://github.com/fphilipe/premailer-rails) to inline CSS styles. 
+* Uses [premailer-rails](https://github.com/fphilipe/premailer-rails) to inline CSS styles.
 
 All emails are direct copies of spree's emails with some light HTML formatting, and the original `content.text.erb` from spree is still sent as a multi part for none HTML clients.
 
@@ -29,7 +29,7 @@ bundle install
 ```
 
 Then copy the default stylesheet into your project
- 
+
 ```bash
 rails generate spree_simple_html_emails:install
 ```
@@ -47,9 +47,9 @@ Only use branches marked as `-stable` in production, any others are likely to be
 Customizing
 -------
 
-Running the above `spree_simple_html_emails:install` command copies the stylesheet to `app/assets/stylesheets/spree/frontend/spree_simple_html_emails.css.scss`. Use this as your base stylesheet and edit as required.
+Running the above `spree_simple_html_emails:install` command copies the stylesheet to `app/assets/stylesheets/email/spree_simple_html_emails.css.scss`. Use this as your base stylesheet and edit as required.
 
-The default variables avaiable to build a custom theme are:
+The default variables available to build a custom theme are:
 
 ````scss
 $email-primary: #5498da;
