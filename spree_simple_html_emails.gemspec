@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_runtime_dependency 'spree_core', '~> 2.1'
+  s.add_runtime_dependency 'spree_core'
   s.add_runtime_dependency 'premailer-rails'
   s.add_runtime_dependency 'nokogiri'
 
